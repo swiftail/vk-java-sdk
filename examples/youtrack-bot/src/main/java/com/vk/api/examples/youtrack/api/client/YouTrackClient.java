@@ -47,7 +47,7 @@ import java.util.Map;
  */
 public class YouTrackClient {
 
-    private static final Logger LOG = LoggerFactory.getLogger(YouTrackClient.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(YouTrackClient.class);
 
     private static final String ENCODING = "UTF-8";
     private static final int MAX_SIMULTANEOUS_CONNECTIONS = 300;

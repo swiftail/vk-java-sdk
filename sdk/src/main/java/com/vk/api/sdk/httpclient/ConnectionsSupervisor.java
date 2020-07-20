@@ -2,8 +2,8 @@ package com.vk.api.sdk.httpclient;
 
 import com.vk.api.sdk.queries.oauth.OAuthQueryBuilder;
 import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+
 
 import java.time.Instant;
 import java.util.Map;
@@ -14,7 +14,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class ConnectionsSupervisor extends Thread {
 
-    private static final Logger LOG = LogManager.getLogger(ConnectionsSupervisor.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(ConnectionsSupervisor.class);
 
     private static final int FULL_CONNECTION_TIMEOUT_S = 60;
     private static final int WAIT_BEFORE_KILL_REQUEST_S = 10;

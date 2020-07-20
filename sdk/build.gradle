@@ -4,7 +4,7 @@ apply plugin: 'signing'
 dependencies {
     compile group: 'com.google.code.gson', name: 'gson', version: gsonVersion
     compile group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
-    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: log4jVersion
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: log4jVersion
 
     compile group: 'org.apache.commons', name: 'commons-text', version: commonsTextVersion
     compile group: 'org.apache.commons', name: 'commons-collections4', version: commonsCollectionsVersion
@@ -15,8 +15,8 @@ dependencies {
     compile group: 'org.apache.httpcomponents', name: 'httpclient', version: httpClientVersion
     compile group: 'org.apache.httpcomponents', name: 'httpmime', version: httpClientVersion
 
-    compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: log4jVersion
-    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: log4jVersion
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: log4jVersion
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: log4jVersion
     testCompile group: 'org.testng', name: 'testng', version: testngVersion
 }
 
@@ -89,11 +89,11 @@ uploadArchives {
                         email 'a.tsivarev@corp.vk.com'
                     }
                 }
-		
-		properties {
-			skipStagingRepositoryClose true
-			autoReleaseAfterClose true
-		}
+
+                properties {
+                    skipStagingRepositoryClose true
+                    autoReleaseAfterClose true
+                }
             }
         }
     }

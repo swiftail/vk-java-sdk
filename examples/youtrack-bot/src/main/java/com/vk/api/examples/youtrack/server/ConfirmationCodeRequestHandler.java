@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
  */
 public class ConfirmationCodeRequestHandler extends AbstractHandler {
 
-    private static final Logger LOG = LoggerFactory.getLogger(ConfirmationCodeRequestHandler.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(ConfirmationCodeRequestHandler.class);
 
     private final Gson gson;
     private final String confirmationCode;

@@ -21,7 +21,7 @@ import java.util.Set;
  */
 public class YouTrackUsersStorage {
 
-    private static final Logger LOG = LoggerFactory.getLogger(YouTrackUsersStorage.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(YouTrackUsersStorage.class);
     private static final Map<String, YouTrackUser> USERS = new HashMap<>();
     private static YouTrackUsersStorage instance;
     private String filePath;

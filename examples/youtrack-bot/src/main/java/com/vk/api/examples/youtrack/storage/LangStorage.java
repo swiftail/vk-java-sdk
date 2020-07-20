@@ -13,7 +13,7 @@ import java.util.Properties;
  */
 public class LangStorage {
 
-    private static final Logger LOG = LoggerFactory.getLogger(DataStorage.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(DataStorage.class);
 
     private static LangStorage instance;
 

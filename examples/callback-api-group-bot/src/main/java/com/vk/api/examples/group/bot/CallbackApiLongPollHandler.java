@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 
 public class CallbackApiLongPollHandler extends CallbackApiLongPoll {
 
-    private static final Logger LOG = LoggerFactory.getLogger(CallbackApiLongPollHandler.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(CallbackApiLongPollHandler.class);
 
     public CallbackApiLongPollHandler(VkApiClient client, UserActor actor, Integer groupId) {
         super(client, actor, groupId);

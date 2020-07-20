@@ -13,7 +13,7 @@ import java.io.IOException;
  */
 public class LoginCommand extends VkCommand {
 
-    private static final Logger LOG = LoggerFactory.getLogger(LoginCommand.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(LoginCommand.class);
 
     private String ytLogin;
 

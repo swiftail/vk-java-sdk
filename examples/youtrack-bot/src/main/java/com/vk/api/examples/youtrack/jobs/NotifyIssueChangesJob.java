@@ -32,7 +32,7 @@ import java.util.Set;
  */
 public class NotifyIssueChangesJob implements Job {
 
-    private static final Logger LOG = LoggerFactory.getLogger(NotifyIssueChangesJob.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(NotifyIssueChangesJob.class);
 
     private static final int COUNT = 100;
     private static final Set<String> SKIP_FIELDS = new HashSet<>();

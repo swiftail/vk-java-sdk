@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class MineTasksCommand extends VkCommand {
 
-    private static final Logger LOG = LoggerFactory.getLogger(MineTasksCommand.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(MineTasksCommand.class);
 
     private Integer count;
 

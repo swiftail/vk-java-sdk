@@ -11,7 +11,7 @@ import java.util.Random;
 
 class BotRequestHandler {
 
-    private static final Logger LOG = LoggerFactory.getLogger(BotRequestHandler.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(BotRequestHandler.class);
 
     private final VkApiClient apiClient;
 

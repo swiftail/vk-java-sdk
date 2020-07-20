@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
  */
 public class MessagesJob implements Job {
 
-    private static final Logger LOG = LoggerFactory.getLogger(MembersUpdateJob.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(MembersUpdateJob.class);
     private static final String LAST_MESSAGE_ID_KEY = "vk.bot.lastMessageId";
 
     private Integer lastMessageId = 0;

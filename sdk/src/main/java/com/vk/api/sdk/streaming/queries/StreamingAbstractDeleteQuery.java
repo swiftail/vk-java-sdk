@@ -15,7 +15,7 @@ import java.lang.reflect.Type;
  */
 public abstract class StreamingAbstractDeleteQuery extends StreamingAbstractQuery {
 
-    private static final Logger LOG = LoggerFactory.getLogger(StreamingAbstractDeleteQuery.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(StreamingAbstractDeleteQuery.class);
     private static final String CONTENT_TYPE = "application/json";
 
     private String body;

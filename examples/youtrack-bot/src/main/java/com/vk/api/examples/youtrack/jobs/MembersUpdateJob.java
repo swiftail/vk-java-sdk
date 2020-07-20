@@ -18,7 +18,7 @@ import java.util.Set;
  */
 public class MembersUpdateJob implements Job {
 
-    private static final Logger LOG = LoggerFactory.getLogger(MembersUpdateJob.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(MembersUpdateJob.class);
 
     @Override
     public void doJob() throws Exception {

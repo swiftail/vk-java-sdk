@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  */
 public class CallbackRequestHandler extends AbstractHandler {
 
-    private static final Logger LOG = LoggerFactory.getLogger(CallbackRequestHandler.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(CallbackRequestHandler.class);
 
     private final static String OK_BODY = "ok";
     private final CallbackApiHandler callbackApiHandler;

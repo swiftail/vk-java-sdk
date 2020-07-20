@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
  */
 public class MessagesHandler {
 
-    private static final Logger LOG = LoggerFactory.getLogger(MembersUpdateJob.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(MembersUpdateJob.class);
 
     private static Integer parseInt(String[] args, int index, int defaultValue) {
         if (args.length <= index) {

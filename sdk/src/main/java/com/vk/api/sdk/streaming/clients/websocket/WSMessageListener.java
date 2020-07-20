@@ -3,10 +3,11 @@ package com.vk.api.sdk.streaming.clients.websocket;
 import com.google.gson.Gson;
 import com.vk.api.sdk.streaming.clients.StreamingEventHandler;
 import com.vk.api.sdk.streaming.objects.StreamingCallbackMessage;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+
 import org.asynchttpclient.ws.WebSocket;
 import org.asynchttpclient.ws.WebSocketListener;
+import org.slf4j.Logger;
 
 /**
  * Listener for messages
@@ -15,7 +16,7 @@ public class WSMessageListener implements WebSocketListener {
 
     private StreamingEventHandler handler;
     private Gson gson;
-    private static final Logger LOG = LogManager.getLogger(WSMessageListener.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(WSMessageListener.class);
 
 
     public WSMessageListener(Gson gson, StreamingEventHandler handler) {

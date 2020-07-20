@@ -15,7 +15,7 @@ import java.util.Set;
  */
 public class MembersStorage {
 
-    private static final Logger LOG = LoggerFactory.getLogger(MembersStorage.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(MembersStorage.class);
     private static final Set<Integer> MEMBERS = new HashSet<>();
     private static MembersStorage instance;
     private String filePath;

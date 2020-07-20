@@ -21,8 +21,8 @@ import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -37,7 +37,7 @@ import java.util.Map;
  */
 public class HttpTransportClient implements TransportClient {
 
-    private static final Logger LOG = LogManager.getLogger(HttpTransportClient.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(HttpTransportClient.class);
 
     private static final String ENCODING = "UTF-8";
     private static final String FORM_CONTENT_TYPE = "application/x-www-form-urlencoded";

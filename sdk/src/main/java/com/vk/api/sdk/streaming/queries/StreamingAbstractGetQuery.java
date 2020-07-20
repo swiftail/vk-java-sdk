@@ -14,7 +14,7 @@ import java.lang.reflect.Type;
  */
 public abstract class StreamingAbstractGetQuery extends StreamingAbstractQuery {
 
-    private static final Logger LOG = LoggerFactory.getLogger(StreamingAbstractGetQuery.class);
+    private static final Logger LOG =org.slf4j.LoggerFactory.getLogger(StreamingAbstractGetQuery.class);
     private static final String CONTENT_TYPE = "application/json";
 
     public StreamingAbstractGetQuery(VkStreamingApiClient client, StreamingActor actor, String path, Type responseClass) {
