@@ -24,7 +24,7 @@ public class PhotoUploadResponse implements Validable {
     /**
      * Uploaded photos data
      */
-    @SerializedName("photos")
+    @SerializedName("photo")
     private String photosList;
 
     /**
